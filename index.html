@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ahmet Yılmaz - Frontend Developer portfolyosu. React, UI/UX ve modern web geliştirme projeleri, yetenekler ve iletişim.">
+  <title>Portfolyo - Ahmet</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#icerik">İçeriğe geç</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Ana menü">
+      <a href="#" class="logo">Ahmet<span>.</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Menüyü aç/kapat">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#ana">Ana</a></li>
+        <li><a href="#hakkimda">Hakkımda</a></li>
+        <li><a href="#projeler">Projeler</a></li>
+        <li><a href="#yetenekler">Yetenekler</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Tema değiştir" title="Tema değiştir">🌙</button>
+    </nav>
+  </header>
+
+  <main id="icerik">
+    <section id="ana" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 class="title">Ahmet Yılmaz</h1>
+          <p class="subtitle">Frontend Developer</p>
+          <p class="lead">Kullanıcı odaklı, performanslı ve erişilebilir web arayüzleri geliştiriyorum.</p>
+          <div class="actions">
+            <a class="btn primary" href="#projeler">Projeleri Gör</a>
+            <a class="btn" href="#iletisim">İletişime Geç</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <div class="avatar" aria-hidden="true">NK</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hakkimda" class="section">
+      <div class="container">
+        <h2 class="section-title">Hakkımda</h2>
+        <p>React ekosistemine odaklanan bir Frontend geliştiricisiyim. Bileşen tabanlı mimari, durum yönetimi ve UI performans optimizasyonu alanlarında deneyimliyim. Tasarım sistemleriyle tutarlı, test edilebilir ve sürdürülebilir arayüzler üretmeyi hedeflerim.</p>
+      </div>
+    </section>
+
+    <section id="projeler" class="section">
+      <div class="container">
+        <h2 class="section-title">Projeler</h2>
+        <div class="grid projects">
+          <article class="card">
+            <h3>Görev Yönetim Uygulaması</h3>
+            <p>React ve LocalStorage ile çevrimdışı destekli görev yönetimi.</p>
+            <a class="btn small" href="#" aria-label="Görev Yönetim Uygulaması detayları">Detay</a>
+          </article>
+          <article class="card">
+            <h3>Blog Platformu</h3>
+            <p>Markdown destekli içerik, arama ve etiketleme özellikleri.</p>
+            <a class="btn small" href="#" aria-label="Blog Platformu detayları">Detay</a>
+          </article>
+          <article class="card">
+            <h3>Portfolyo Şablonu</h3>
+            <p>Hızlı yüklenen, SEO uyumlu statik portfolyo yapısı.</p>
+            <a class="btn small" href="#" aria-label="Portfolyo Şablonu detayları">Detay</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="yetenekler" class="section">
+      <div class="container">
+        <h2 class="section-title">Yetenekler</h2>
+        <ul class="skills">
+          <li>HTML5</li>
+          <li>CSS3 / Sass</li>
+          <li>JavaScript / TypeScript</li>
+          <li>React</li>
+          <li>Redux / RTK Query</li>
+          <li>REST / Fetch</li>
+          <li>Jest / Testing Library</li>
+          <li>Git</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="iletisim" class="section">
+      <div class="container">
+        <h2 class="section-title">İletişim</h2>
+        <div class="contact">
+          <a class="contact-link" href="mailto:nisa@example.com">E-posta</a>
+          <a class="contact-link" href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="contact-link" href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <form class="contact-form" name="iletisim-form" aria-label="İletişim Formu" onsubmit="return false;">
+          <div class="form-row">
+            <input type="text" name="ad" placeholder="Ad Soyad" required>
+            <input type="email" name="email" placeholder="E-posta" required>
+          </div>
+          <textarea name="mesaj" rows="4" placeholder="Mesajınız" required></textarea>
+          <button type="submit" class="btn primary">Gönder</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p> Nisa Korkmaz</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
